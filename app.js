@@ -1,31 +1,30 @@
 
-//goals bet function
-//here you put the matches played by the hosts and in how many of these matches played at home, at least 3 goals were scored
-//here you put the matches played by the guests and in how many of these matches played away, at least 3 goals were scored
+//GOALS BETTING APP
+//HERE YOU PUT THE MATCHES PLAYED BY THE HOST ON THE OWN FIELD AND BY THE GUESTS ON THE GO AND CALCULATE THE PERCENTAGE OF THE MATCHES WITH A MINIMUM 3 GOALS
 
 function homeGoalsPercentage(games3GoalsAtLeast, homeGames) {
-    let procentHome = (games3GoalsAtLeast / homeGames) * 100;
-    return procentHome;
+    let percentagetHomeTeam = (games3GoalsAtLeast / homeGames) * 100;
+    return percentagetHomeTeam;
 }
-console.log(homeGoalsPercentage(2, 7));
+console.log(homeGoalsPercentage(2, 4));
 
 function awayGoalsPercentage(games3GoalsAtLeast, awayGames) {
-    let procentAway = (games3GoalsAtLeast / awayGames) * 100;
-    return procentAway;
+    let percentagetAwayTeam = (games3GoalsAtLeast / awayGames) * 100;
+    return percentagetAwayTeam;
 }
-console.log(awayGoalsPercentage(3, 8));
+console.log(awayGoalsPercentage(3, 6));
 
 
-//How many matches played by the host team and how many of them were with at least 3 goals
-//How many matches played by the guest team and in how many of them, there were at least 3 goals
-let percentageHomeTeam = 0.29;
-let percentageGuestTeam = 0.38;
+//PERCENTAGE OF MATCHES WITH A MINIMUM OF 3 GOALS PLAYED BY HOST TEAMS AND GUESTS
+
+percentagetHomeTeam = 0.50;
+percentagetAwayTeam = 0.50;
 
 
-//calculation function with percentage of matches, in which at least 3 goals were scored
+//CALCULATE ACCORDING TO THE AVERAGE GOALS PLAYED AT HOME BY THE HOST AND THE MATCHES PLAYED AWAY BY THE GUESTS, INCLUDING THE TOTAL AVERAGE GOALS PER MATCH PER TEAM, THIS SEASON
 function betApp(averageGoalTotalHosts, averageGoalsTotalGuests) {
     let averageGoals = (averageGoalTotalHosts + averageGoalsTotalGuests) / 2;
-    let calculate = (averageGoals * percentageHomeTeam + averageGoals * percentageGuestTeam) / 0.10;
+    let calculate = (averageGoals * percentagetHomeTeam + averageGoals * percentagetAwayTeam) / 0.10;
     if (calculate === 0 || calculate <= 20) {
         console.log('Under 2.5 goals or Under 3.5 goals')
     } else if (calculate === 21 || calculate <= 30) {
@@ -41,4 +40,4 @@ function betApp(averageGoalTotalHosts, averageGoalsTotalGuests) {
 
 }
 //here you put the average of goals per match
-console.log(betApp(1.93, 2.00));
+console.log(betApp(4.00, 2.90));
