@@ -25,13 +25,13 @@ percentagetAwayTeam = 0.50;
 function betApp(averageGoalTotalHosts, averageGoalsTotalGuests) {
     let averageGoals = (averageGoalTotalHosts + averageGoalsTotalGuests) / 2;
     let calculate = (averageGoals * percentagetHomeTeam + averageGoals * percentagetAwayTeam) / 0.10;
-    if (calculate === 0 || calculate <= 20) {
+    if (calculate === 0 || calculate <= 20.99) {
         console.log('Under 2.5 goals or Under 3.5 goals')
-    } else if (calculate === 21 || calculate <= 30) {
+    } else if (calculate === 21 || calculate <= 30.99) {
         console.log('Over 1.5 goals');
-    } else if (calculate === 31 || calculate <= 40) {
+    } else if (calculate === 31 || calculate <= 40.99) {
         console.log('2-4 goals or 2-5 goals');
-    } else if (calculate === 41 || calculate <= 50) {
+    } else if (calculate === 41 || calculate <= 50.99) {
         console.log('Over 2.5 goals');
     } else {
         console.log('Over 3 (asian handicap bet) goals or over 3.5 goals');
