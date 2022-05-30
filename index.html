@@ -15,20 +15,20 @@
     <div class="container">
       <div class="header-of-box">
         <div class="home-game">
-          <p class="home-visitors">Home Team of this meeting</p>
+          <p class="home-visitors">The host team of the meeting</p>
           <div class="home-box">
             <div class="home-games-with-3goals">
               <input
                 class="input1"
                 type="text"
-                placeholder="Home games with at least 3 goals,this season"
+                placeholder="Enter home games with at least 3 goals,this season"
               />
             </div>
             <div class="home-games">
               <input
                 class="input2"
                 type="text"
-                placeholder="Home games,played this season"
+                placeholder="Matches played at home,this season"
               />
             </div>
             <input type="button" class="calculate-perTeam-button" value="Calculate Average">
@@ -42,20 +42,20 @@
          
         </div>
         <div class="away-game">
-          <p class="home-visitors">Visitors of this meeting</p>
+          <p class="home-visitors">The guest team of the meeting</p>
           <div class="visitors-box">
             <div class="visitors-games-with-3goals">
               <input
                 class="input1"
                 type="text"
-                placeholder="Away games with at least 3 goals,this season"
+                placeholder="Enter away games with at least 3 goals,this season"
               />
             </div>
             <div class="visitors-games">
               <input
                 class="input2"
                 type="text"
-                placeholder="Away games,played this season"
+                placeholder="Away matches,played this season"
               />
             </div>
             <input type="button" class="calculate-perTeam-button" value="Calculate Average">
@@ -69,7 +69,35 @@
           
         </div>
       </div>
+      
+      <div class="main-box">
+          
+          <div class="home-game">
+            <p class="home-visitors">Total average of goals per match this season, for the hosts: </p>
+            <div class="home-main-box">
+              <div class="home-games-with-3goals">
+                <input
+                  class="input-main-box1"
+                  type="text"
+                />
+              </div>
+              </div>
+           </div>
+          <div class="away-game">
+            <p class="home-visitors">Total average of goals per match this season,for the guests: </p>
+            <div class="visitors-main-box">
+              <div class="visitors-games-with-3goals">
+                <input
+                  class="input-main-box2"
+                  type="text"
+                />
+              </div>
+              </div>
+      </div>
+      <input type="button" class="calculate-total-average-button" value="Calculate Average">
     </div>
+<p class="main-box-text">Calculate the chances here: </p>
+</div>
 
     <script src="app.js"></script>
   </body>
