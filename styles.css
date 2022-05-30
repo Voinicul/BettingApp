@@ -168,7 +168,7 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     margin-top: 5px;
-    margin-left: 380px;
+    margin-left: 362px;
   }
   
   .calculate-total-average-button:focus {
@@ -183,5 +183,15 @@
     grid-row: 4/5;
     display: flex;
     justify-content: space-evenly;
+  }
+  
+  .input-totalAverage-box2 {
+    margin-top: 5px;
+    width: 80px;
+    height: 20px;
+  margin-left:405px;
+    padding-left: 37px;
+    outline: none;
+    border: 0;
   }
   
