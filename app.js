@@ -8,6 +8,8 @@ document.querySelector('.home-submit-button').onclick = function () {
     calculation = (((Number(homeGoals) / Number(homeGames)) * 100) / 100).toPrecision(2);
 
     document.querySelector(".home-results").value = calculation + '%';
+    document.querySelector(".host-total-average-goals").value = calculation ;
+    
     return false;
 }
 
@@ -20,6 +22,7 @@ document.querySelector('.away-submit-button').onclick = function () {
     calculation = (((Number(awayGoals) / Number(awayGames)) * 100) / 100).toPrecision(2);
 
     document.querySelector(".away-results").value = calculation + '%';
+    document.querySelector(".guest-total-average-goals").value = calculation ;
     return false;
 }
 
@@ -31,6 +34,8 @@ document.querySelector('.total-average-button').onclick = function () {
     awayAverage = document.querySelector('.total-away-average').value;
     totalCalculation = ((Number(homeAverage) + Number(awayAverage)) / 2).toPrecision(3);
     document.querySelector(".total-results").value = totalCalculation ;
+    document.querySelector(".here-total-average-goals").value = totalCalculation ;
+    
     return false;
 }
 
@@ -44,7 +49,7 @@ document.querySelector('.calculate-chances').onclick = function () {
     totalAverage = document.querySelector('.here-total-average-goals').value;
     homeHomeAverage = document.querySelector('.host-total-average-goals').value;
     awayAwayAverage = document.querySelector('.guest-total-average-goals').value;
-    totalChancesCalculation = (Number(homeHomeAverage) * (Number(totalAverage) + Number(awayAwayAverage) * Number(totalAverage)) / 0.10).toPrecision(3);
+    totalChancesCalculation = ((Number(homeHomeAverage) * (Number(totalAverage)) + (Number(awayAwayAverage) * Number(totalAverage))) / 0.10).toPrecision(3);
    
     if (Number(totalChancesCalculation) === 0 || Number(totalChancesCalculation) <= 20.99) {
         document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : Under 2.5 goals! Under 3.5 goals! ";
