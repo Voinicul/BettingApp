@@ -23,7 +23,7 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  color:#6393eb;
+  color:#124096;
   margin-top: 5px;
 }
 
@@ -47,6 +47,7 @@ body {
 
 .home-team{
   margin-left: 40px;
+  
   
 }
 
@@ -72,6 +73,8 @@ input {
   padding-left: 10px;
   outline: none;
   border: 0;
+  
+  
 }
 .home-submit-button, .away-submit-button, .calculate-total-average-button, .total-average-button, .calculate-chances {
   display: flex;
@@ -102,16 +105,19 @@ input {
 .main-box{
   display: flex;
   flex-direction: column;
+  
 }
 
 .total-home-average, .total-away-average {
   margin-left: 370px;
   width: 150px;
+  
 }
 
 .home-visitors {
   margin-top: 4px;
   margin-left: 150px;
+  
 }
 
 .total-average-button {
@@ -124,6 +130,11 @@ input {
 
 h5{
   margin-top: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(7, 7, 139);
+  font-size: 15px;
+  font-weight: 750;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -148,9 +159,48 @@ footer {
 
 .main-box-text {
   margin-top: 5px;
-  margin-left: 180px;
+  margin-left: 210px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(32, 35, 226);
+  font-size: 13px;
+  font-weight: 750;
+  
 }
 
 .host-total-average-goals, .guest-total-average-goals, .here-total-average-goals{
   margin-left: 270px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(16, 179, 11);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+h3 {
+  margin-left: 175px;
+  margin-top: 10px;
+  color:hsl(200, 100%, 20%)
+  
+}
+
+
+.home-results, .away-results ,.total-results{
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(16, 179, 11);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.recomended-bet {
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(223, 11, 11);
+  font-size: 13px;
+  font-weight: 650;
+  padding-left: 7px;
+}
+
+.home-games-with-3-goals, .home-games, .away-games-with-3-goals, .away-games {
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(16, 179, 11);
+  font-size: 13px;
+  font-weight: 900;
 }
