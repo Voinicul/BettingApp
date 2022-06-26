@@ -25,6 +25,7 @@ body {
   justify-content: center;
   color:#124096;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .container {
@@ -56,7 +57,7 @@ body {
 }
 
 input {
-  margin-top: 7px;
+  margin-top: 5px;
   width: 350px;
   height: 25px;
   padding-left: 35px;
@@ -66,7 +67,7 @@ input {
 }
 
 .home-results, .away-results ,.total-results, .recomended-bet{
-  margin-top: 10px;
+  margin-top: 8px;
   width: 55px;
   height: 25px;
   margin-left: 150px;
@@ -117,11 +118,23 @@ input {
 .home-visitors {
   margin-top: 4px;
   margin-left: 150px;
-  
+  color:rgb(7, 7, 139);
+  font-size: 15px;
+  font-weight: 750;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
+
+
+.total-home-average, .total-away-average{
+  color:rgb(16, 179, 11);
+  font-size: 13px;
+  font-weight: 800;
+}
 .total-average-button {
   margin-left: 270px;
+  margin-bottom: 8px;
 }
 
 .total-results {
@@ -146,6 +159,7 @@ footer {
   margin-left: 270px;
   padding-left: 40px;
   margin-top: 4px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -203,4 +217,9 @@ h3 {
   color:rgb(16, 179, 11);
   font-size: 13px;
   font-weight: 900;
+}
+
+.host-average-goals, .visitors-average-goals {
+  margin-top: 15px;
+
 }

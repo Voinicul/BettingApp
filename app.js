@@ -52,15 +52,15 @@ document.querySelector('.calculate-chances').onclick = function () {
     totalChancesCalculation = ((Number(homeHomeAverage) * (Number(totalAverage)) + (Number(awayAwayAverage) * Number(totalAverage))) / 0.10).toPrecision(3);
    
     if (Number(totalChancesCalculation) === 0 || Number(totalChancesCalculation) <= 20.99) {
-        document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : Under 2.5 goals! Under 3.5 goals! ";
+        document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : Under 2.5 goals! or Under 3.5 goals! ";
     } else if (totalChancesCalculation === 21 || totalChancesCalculation <= 30.99) {
-        document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : Over 1.5 goals! ";
+        document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : 1-3 goals! ";
     } else if (totalChancesCalculation === 31 || totalChancesCalculation <= 40.99) {
         document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : 2-4 goals or 2-5 goals! ";
     } else if (totalChancesCalculation === 41 || totalChancesCalculation <= 50.99) {
-        document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : Over 2.5 goals! ";
+        document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : Over 2.5 goals! or Over 2 (asian handicap bet) goals!";
     } else {
-        document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : Over 3 (asian handicap bet) goals or over 3.5 goals! ";
+        document.querySelector(".recomended-bet").value = totalChancesCalculation + '% ' + " Recommended bet : Over 3.5 goals! or Over 3 (asian handicap bet) goals!";
     }
     return false;
 
